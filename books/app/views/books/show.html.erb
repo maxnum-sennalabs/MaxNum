@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book.titleize %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @book.constantize %>
+</p>
+
+<p>
+  <strong>Activated:</strong>
+  <%= @book.activated %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
