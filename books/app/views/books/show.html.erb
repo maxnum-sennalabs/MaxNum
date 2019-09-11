@@ -2,18 +2,18 @@
 
 <p>
   <strong>Title:</strong>
-  <%= @book.titleize %>
+  <%= @book.title %>
 </p>
 
 <p>
-  <strong>Content:</strong>
-  <%= @book.constantize %>
+  <strong>Author:</strong>
+  <%= @book.author %>
 </p>
 
 <p>
-  <strong>Activated:</strong>
-  <%= @book.activated %>
+  <strong>Sales_amount:</strong>
+  <%= @book.sales_amount %>
 </p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+<%= link_to 'Back', book_path %>

@@ -1,5 +1,5 @@
 <%= form_with(model: @book, local: true) do |form| %>
-  <% if book.errors.any? %>
+  <% if @book.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
 
@@ -17,13 +17,18 @@
   </div>
 
   <div class="field">
-    <%= form.label :content %>
-    <%= form.text_field :content %>
+    <%= form.label :author %>
+    <%= form.text_field :author %>
   </div>
 
   <div class="field">
-    <%= form.label :activated %>
-    <%= form.check_box :activated %>
+    <%= form.label :sales_amount %>
+    <%= form.number_field :sales_amount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :available %>
+    <%= form.check_box :available %>
   </div>
 
   <div class="books">
